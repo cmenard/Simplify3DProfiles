@@ -255,6 +255,9 @@
     <infillPercentage>50</infillPercentage>
     <supportInfillPercentage>40</supportInfillPercentage>
     <startingGcode>M420 S0 ; Disable Mesh Bed Leveling,G28 ; home all axes,M420 S1 ; Enable Mesh Bed Leveling,M204 P1500.00 R3000.00 T3000.00 ; Set Acceleration,M207 S1.00 W20.00 F3000.00 Z0.60 ; Retraction Z lift 2x layer height,M208 S0.00 W20.00 F3000.00 ; Retraction Recover,M209 S1 ; Enable Firmware Retraction,M900 K0.08 ; Linear Advance,G1 Y50 Z0.3 F9600 ; move forward to avoid binder clips,G1 X205 Z10 ; move off platform,G1 Z0.4 ; position nozzle,;G92 E0 ; zero extruder,G1 E25 F225 ; purge nozzle,;G92 E0 ; zero extruder,G1 X190 Z0.1 E1.0 F1200 ; slow wipe,G1 X180 Z0.25 ; lift</startingGcode>
+    <firstLayerHeightPercentage>125</firstLayerHeightPercentage>
+    <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
+    <firstLayerUnderspeed>0.35</firstLayerUnderspeed>
   </autoConfigureQuality>
   <autoConfigureQuality name="0.25">
     <layerHeight>0.25</layerHeight>
@@ -264,6 +267,9 @@
     <infillPercentage>50</infillPercentage>
     <supportInfillPercentage>40</supportInfillPercentage>
     <startingGcode>M420 S0 ; Disable Mesh Bed Leveling,G28 ; home all axes,M420 S1 ; Enable Mesh Bed Leveling,M204 P1500.00 R3000.00 T3000.00 ; Set Acceleration,M207 S1.00 W20.00 F3000.00 Z0.50 ; Retraction Z lift 2x layer height,M208 S0.00 W20.00 F3000.00 ; Retraction Recover,M209 S1 ; Enable Firmware Retraction,M900 K0.08 ; Linear Advance,G1 Y50 Z0.3 F9600 ; move forward to avoid binder clips,G1 X205 Z10 ; move off platform,G1 Z0.4 ; position nozzle,;G92 E0 ; zero extruder,G1 E25 F225 ; purge nozzle,;G92 E0 ; zero extruder,G1 X190 Z0.1 E1.0 F1200 ; slow wipe,G1 X180 Z0.25 ; lift</startingGcode>
+    <firstLayerHeightPercentage>125</firstLayerHeightPercentage>
+    <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
+    <firstLayerUnderspeed>0.35</firstLayerUnderspeed>
   </autoConfigureQuality>
   <autoConfigureQuality name="0.2">
     <layerHeight>0.2</layerHeight>
@@ -273,6 +279,9 @@
     <infillPercentage>50</infillPercentage>
     <supportInfillPercentage>40</supportInfillPercentage>
     <startingGcode>M420 S0 ; Disable Mesh Bed Leveling,G28 ; home all axes,M420 S1 ; Enable Mesh Bed Leveling,M204 P1500.00 R3000.00 T3000.00 ; Set Acceleration,M207 S1.00 W20.00 F3000.00 Z0.40 ; Retraction Z lift 2x layer height,M208 S0.00 W20.00 F3000.00 ; Retraction Recover,M209 S1 ; Enable Firmware Retraction,M900 K0.08 ; Linear Advance,G1 Y50 Z0.3 F9600 ; move forward to avoid binder clips,G1 X205 Z10 ; move off platform,G1 Z0.4 ; position nozzle,;G92 E0 ; zero extruder,G1 E25 F225 ; purge nozzle,;G92 E0 ; zero extruder,G1 X190 Z0.1 E1.0 F1200 ; slow wipe,G1 X180 Z0.25 ; lift</startingGcode>
+    <firstLayerHeightPercentage>125</firstLayerHeightPercentage>
+    <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
+    <firstLayerUnderspeed>0.35</firstLayerUnderspeed>
   </autoConfigureQuality>
   <autoConfigureQuality name="0.15">
     <layerHeight>0.15</layerHeight>
@@ -282,5 +291,20 @@
     <infillPercentage>50</infillPercentage>
     <supportInfillPercentage>40</supportInfillPercentage>
     <startingGcode>M420 S0 ; Disable Mesh Bed Leveling,G28 ; home all axes,M420 S1 ; Enable Mesh Bed Leveling,M204 P1500.00 R3000.00 T3000.00 ; Set Acceleration,M207 S1.00 W20.00 F3000.00 Z0.30 ; Retraction Z lift 2x layer height,M208 S0.00 W20.00 F3000.00 ; Retraction Recover,M209 S1 ; Enable Firmware Retraction,M900 K0.08 ; Linear Advance,G1 Y50 Z0.3 F9600 ; move forward to avoid binder clips,G1 X205 Z10 ; move off platform,G1 Z0.4 ; position nozzle,;G92 E0 ; zero extruder,G1 E25 F225 ; purge nozzle,;G92 E0 ; zero extruder,G1 X190 Z0.1 E1.0 F1200 ; slow wipe,G1 X180 Z0.25 ; lift</startingGcode>
+    <firstLayerHeightPercentage>125</firstLayerHeightPercentage>
+    <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
+    <firstLayerUnderspeed>0.35</firstLayerUnderspeed>
+  </autoConfigureQuality>
+    <autoConfigureQuality name="0.10">
+    <layerHeight>0.10</layerHeight>
+    <topSolidLayers>4</topSolidLayers>
+    <bottomSolidLayers>4</bottomSolidLayers>
+    <skirtLayers>1</skirtLayers>
+    <infillPercentage>50</infillPercentage>
+    <supportInfillPercentage>40</supportInfillPercentage>
+    <startingGcode>M420 S0 ; Disable Mesh Bed Leveling,G28 ; home all axes,M420 S1 ; Enable Mesh Bed Leveling,M204 P1500.00 R3000.00 T3000.00 ; Set Acceleration,M207 S1.00 W20.00 F3000.00 Z0.20 ; Retraction Z lift 2x layer height,M208 S0.00 W20.00 F3000.00 ; Retraction Recover,M209 S1 ; Enable Firmware Retraction,M900 K0.08 ; Linear Advance,G1 Y50 Z0.3 F9600 ; move forward to avoid binder clips,G1 X205 Z10 ; move off platform,G1 Z0.4 ; position nozzle,;G92 E0 ; zero extruder,G1 E25 F225 ; purge nozzle,;G92 E0 ; zero extruder,G1 X190 Z0.1 E1.0 F1200 ; slow wipe,G1 X180 Z0.25 ; lift</startingGcode>
+    <firstLayerHeightPercentage>125</firstLayerHeightPercentage>
+    <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
+    <firstLayerUnderspeed>0.35</firstLayerUnderspeed>
   </autoConfigureQuality>
 </profile>
