@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<profile name="Creality Ender 3 Pro bugfix-2.0.x" version="2020-07-16 13:36:07" app="S3D-Software 4.1.2">
+<profile name="Creality Ender 3 Pro bugfix-2.0.x" version="2020-07-16 22:27:13" app="S3D-Software 4.1.2">
   <baseProfile></baseProfile>
   <printMaterial>TPU</printMaterial>
   <printQuality>Medium</printQuality>
@@ -9,14 +9,14 @@
     <diameter>0.4</diameter>
     <autoWidth>0</autoWidth>
     <width>0.42</width>
-    <extrusionMultiplier>1</extrusionMultiplier>
+    <extrusionMultiplier>1.03</extrusionMultiplier>
     <useRetract>1</useRetract>
-    <retractionDistance>3</retractionDistance>
-    <extraRestartDistance>0</extraRestartDistance>
+    <retractionDistance>4</retractionDistance>
+    <extraRestartDistance>-0.2</extraRestartDistance>
     <retractionZLift>0</retractionZLift>
-    <retractionSpeed>2400</retractionSpeed>
+    <retractionSpeed>3000</retractionSpeed>
     <useCoasting>1</useCoasting>
-    <coastingDistance>0.5</coastingDistance>
+    <coastingDistance>0.7</coastingDistance>
     <useWipe>0</useWipe>
     <wipeDistance>5</wipeDistance>
   </extruder>
@@ -62,7 +62,7 @@
   <infillExtruder>0</infillExtruder>
   <internalInfillPattern>Rectilinear</internalInfillPattern>
   <externalInfillPattern>Rectilinear</externalInfillPattern>
-  <infillPercentage>30</infillPercentage>
+  <infillPercentage>40</infillPercentage>
   <outlineOverlapPercentage>25</outlineOverlapPercentage>
   <infillExtrusionWidthPercentage>125</infillExtrusionWidthPercentage>
   <minInfillLength>0.4</minInfillLength>
@@ -90,7 +90,7 @@
     <temperatureNumber>0</temperatureNumber>
     <isHeatedBed>0</isHeatedBed>
     <stabilizeAtStartup>1</stabilizeAtStartup>
-    <setpoint layer="1" temperature="215"/>
+    <setpoint layer="1" temperature="200"/>
   </temperatureController>
   <temperatureController name="Heated Bed">
     <temperatureNumber>0</temperatureNumber>
@@ -142,7 +142,7 @@
   <baudRateOverride>115200</baudRateOverride>
   <overridePrinterModels>1</overridePrinterModels>
   <printerModelsOverride></printerModelsOverride>
-  <startingGcode>G28 ; home all axes,M420 S1 ; Enable Mesh Bed Leveling,M900 K0.20 ; Linear Advance,G1 X5 Y10 Z0.2 F3000 ; get ready to prime,;G92 E0 ; reset extrusion distance,G1 X160 E15 F600 ; prime nozzle,G1 X180 F5000 ; quick wipe</startingGcode>
+  <startingGcode>G28 ; home all axes,M420 S1 ; Enable Mesh Bed Leveling,M900 K0.00 ; Linear Advance,G1 X5 Y10 Z0.2 F3000 ; get ready to prime,;G92 E0 ; reset extrusion distance,G1 X160 E15 F600 ; prime nozzle,G1 X180 F5000 ; quick wipe</startingGcode>
   <layerChangeGcode></layerChangeGcode>
   <retractionGcode></retractionGcode>
   <toolChangeGcode></toolChangeGcode>
@@ -155,11 +155,11 @@
   <outlineUnderspeed>0.5</outlineUnderspeed>
   <solidInfillUnderspeed>0.8</solidInfillUnderspeed>
   <supportUnderspeed>0.8</supportUnderspeed>
-  <rapidXYspeed>4800</rapidXYspeed>
+  <rapidXYspeed>7200</rapidXYspeed>
   <rapidZspeed>1000</rapidZspeed>
   <minBridgingArea>50</minBridgingArea>
   <bridgingExtraInflation>0</bridgingExtraInflation>
-  <bridgingExtrusionMultiplier>0.9</bridgingExtrusionMultiplier>
+  <bridgingExtrusionMultiplier>1</bridgingExtrusionMultiplier>
   <bridgingSpeedMultiplier>1</bridgingSpeedMultiplier>
   <useFixedBridgingAngle>0</useFixedBridgingAngle>
   <fixedBridgingAngle>0</fixedBridgingAngle>
@@ -180,7 +180,7 @@
   <useRetractionMinTravel>1</useRetractionMinTravel>
   <retractionMinTravel>1</retractionMinTravel>
   <retractWhileWiping>1</retractWhileWiping>
-  <onlyWipeOutlines>1</onlyWipeOutlines>
+  <onlyWipeOutlines>0</onlyWipeOutlines>
   <avoidCrossingOutline>0</avoidCrossingOutline>
   <maxMovementDetourFactor>3</maxMovementDetourFactor>
   <toolChangeRetractionDistance>12</toolChangeRetractionDistance>
@@ -188,7 +188,7 @@
   <toolChangeRetractionSpeed>600</toolChangeRetractionSpeed>
   <externalThinWallType>0</externalThinWallType>
   <internalThinWallType>2</internalThinWallType>
-  <thinWallAllowedOverlapPercentage>10</thinWallAllowedOverlapPercentage>
+  <thinWallAllowedOverlapPercentage>25</thinWallAllowedOverlapPercentage>
   <singleExtrusionMinLength>1</singleExtrusionMinLength>
   <singleExtrusionMinPrintingWidthPercentage>50</singleExtrusionMinPrintingWidthPercentage>
   <singleExtrusionMaxPrintingWidthPercentage>200</singleExtrusionMaxPrintingWidthPercentage>
@@ -364,7 +364,7 @@
     <topSolidLayers>3</topSolidLayers>
     <bottomSolidLayers>3</bottomSolidLayers>
     <skirtLayers>1</skirtLayers>
-    <infillPercentage>30</infillPercentage>
+    <infillPercentage>40</infillPercentage>
     <supportInfillPercentage>40</supportInfillPercentage>
     <firstLayerHeightPercentage>100</firstLayerHeightPercentage>
     <firstLayerWidthPercentage>150</firstLayerWidthPercentage>
@@ -382,9 +382,9 @@
     <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
   </autoConfigureQuality>
   <autoConfigureMaterial name="TPU">
-    <globalExtruderTemperature>215</globalExtruderTemperature>
+    <globalExtruderTemperature>200</globalExtruderTemperature>
     <globalBedTemperature>40</globalBedTemperature>
-    <globalExtrusionMultiplier>1</globalExtrusionMultiplier>
+    <globalExtrusionMultiplier>1.03</globalExtrusionMultiplier>
     <fanSpeed>
       <setpoint layer="1" speed="0"/>
       <setpoint layer="2" speed="100"/>
@@ -393,11 +393,11 @@
     <outlineUnderspeed>0.5</outlineUnderspeed>
     <solidInfillUnderspeed>0.8</solidInfillUnderspeed>
     <supportUnderspeed>0.8</supportUnderspeed>
-    <rapidXYspeed>4800</rapidXYspeed>
+    <rapidXYspeed>7200</rapidXYspeed>
     <rapidZspeed>1000</rapidZspeed>
     <minBridgingArea>50</minBridgingArea>
     <bridgingExtraInflation>0</bridgingExtraInflation>
-    <bridgingExtrusionMultiplier>0.9</bridgingExtrusionMultiplier>
+    <bridgingExtrusionMultiplier>1</bridgingExtrusionMultiplier>
     <bridgingSpeedMultiplier>1</bridgingSpeedMultiplier>
     <useFixedBridgingAngle>0</useFixedBridgingAngle>
     <fixedBridgingAngle>0</fixedBridgingAngle>
@@ -407,18 +407,18 @@
       <diameter>0.4</diameter>
       <autoWidth>0</autoWidth>
       <width>0.42</width>
-      <extrusionMultiplier>1</extrusionMultiplier>
+      <extrusionMultiplier>1.03</extrusionMultiplier>
       <useRetract>1</useRetract>
-      <retractionDistance>3</retractionDistance>
-      <extraRestartDistance>0</extraRestartDistance>
+      <retractionDistance>4</retractionDistance>
+      <extraRestartDistance>-0.2</extraRestartDistance>
       <retractionZLift>0</retractionZLift>
-      <retractionSpeed>2400</retractionSpeed>
+      <retractionSpeed>3000</retractionSpeed>
       <useCoasting>1</useCoasting>
-      <coastingDistance>0.5</coastingDistance>
+      <coastingDistance>0.7</coastingDistance>
       <useWipe>0</useWipe>
       <wipeDistance>5</wipeDistance>
     </extruder>
-    <startingGcode>G28 ; home all axes,M420 S1 ; Enable Mesh Bed Leveling,M900 K0.20 ; Linear Advance,G1 X5 Y10 Z0.2 F3000 ; get ready to prime,;G92 E0 ; reset extrusion distance,G1 X160 E15 F600 ; prime nozzle,G1 X180 F5000 ; quick wipe</startingGcode>
+    <startingGcode>G28 ; home all axes,M420 S1 ; Enable Mesh Bed Leveling,M900 K0.00 ; Linear Advance,G1 X5 Y10 Z0.2 F3000 ; get ready to prime,;G92 E0 ; reset extrusion distance,G1 X160 E15 F600 ; prime nozzle,G1 X180 F5000 ; quick wipe</startingGcode>
   </autoConfigureMaterial>
   <autoConfigureMaterial name="PETG">
     <globalExtruderTemperature>240</globalExtruderTemperature>
