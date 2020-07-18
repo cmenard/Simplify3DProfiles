@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<profile name="Creality Ender 3 Pro bugfix-2.0.x" version="2020-07-16 22:27:13" app="S3D-Software 4.1.2">
+<profile name="Creality Ender 3 Pro bugfix-2.0.x" version="2020-07-17 22:18:35" app="S3D-Software 4.1.2">
   <baseProfile></baseProfile>
-  <printMaterial>TPU</printMaterial>
+  <printMaterial>PLA</printMaterial>
   <printQuality>Medium</printQuality>
   <printExtruders></printExtruders>
   <extruder name="Primary Extruder">
@@ -9,14 +9,14 @@
     <diameter>0.4</diameter>
     <autoWidth>0</autoWidth>
     <width>0.42</width>
-    <extrusionMultiplier>1.03</extrusionMultiplier>
+    <extrusionMultiplier>1</extrusionMultiplier>
     <useRetract>1</useRetract>
-    <retractionDistance>4</retractionDistance>
-    <extraRestartDistance>-0.2</extraRestartDistance>
+    <retractionDistance>2</retractionDistance>
+    <extraRestartDistance>0.2</extraRestartDistance>
     <retractionZLift>0</retractionZLift>
-    <retractionSpeed>3000</retractionSpeed>
-    <useCoasting>1</useCoasting>
-    <coastingDistance>0.7</coastingDistance>
+    <retractionSpeed>2400</retractionSpeed>
+    <useCoasting>0</useCoasting>
+    <coastingDistance>0.2</coastingDistance>
     <useWipe>0</useWipe>
     <wipeDistance>5</wipeDistance>
   </extruder>
@@ -90,13 +90,13 @@
     <temperatureNumber>0</temperatureNumber>
     <isHeatedBed>0</isHeatedBed>
     <stabilizeAtStartup>1</stabilizeAtStartup>
-    <setpoint layer="1" temperature="200"/>
+    <setpoint layer="1" temperature="210"/>
   </temperatureController>
   <temperatureController name="Heated Bed">
     <temperatureNumber>0</temperatureNumber>
     <isHeatedBed>1</isHeatedBed>
     <stabilizeAtStartup>1</stabilizeAtStartup>
-    <setpoint layer="1" temperature="40"/>
+    <setpoint layer="1" temperature="60"/>
   </temperatureController>
   <fanSpeed>
     <setpoint layer="1" speed="0"/>
@@ -142,7 +142,7 @@
   <baudRateOverride>115200</baudRateOverride>
   <overridePrinterModels>1</overridePrinterModels>
   <printerModelsOverride></printerModelsOverride>
-  <startingGcode>G28 ; home all axes,M420 S1 ; Enable Mesh Bed Leveling,M900 K0.00 ; Linear Advance,G1 X5 Y10 Z0.2 F3000 ; get ready to prime,;G92 E0 ; reset extrusion distance,G1 X160 E15 F600 ; prime nozzle,G1 X180 F5000 ; quick wipe</startingGcode>
+  <startingGcode>G28 ; home all axes,M420 S1 ; Enable Mesh Bed Leveling,M900 K0.00 ; Linear Advance,G1 E15 F225 ; purge nozzle,G1 X5 Y30 Z0.1 E0.5 F1200 ; slow wipe</startingGcode>
   <layerChangeGcode></layerChangeGcode>
   <retractionGcode></retractionGcode>
   <toolChangeGcode></toolChangeGcode>
@@ -155,11 +155,11 @@
   <outlineUnderspeed>0.5</outlineUnderspeed>
   <solidInfillUnderspeed>0.8</solidInfillUnderspeed>
   <supportUnderspeed>0.8</supportUnderspeed>
-  <rapidXYspeed>7200</rapidXYspeed>
+  <rapidXYspeed>4800</rapidXYspeed>
   <rapidZspeed>1000</rapidZspeed>
   <minBridgingArea>50</minBridgingArea>
   <bridgingExtraInflation>0</bridgingExtraInflation>
-  <bridgingExtrusionMultiplier>1</bridgingExtrusionMultiplier>
+  <bridgingExtrusionMultiplier>0.9</bridgingExtrusionMultiplier>
   <bridgingSpeedMultiplier>1</bridgingSpeedMultiplier>
   <useFixedBridgingAngle>0</useFixedBridgingAngle>
   <fixedBridgingAngle>0</fixedBridgingAngle>
@@ -197,12 +197,12 @@
   <autoConfigureMaterial name="PLA">
     <globalExtruderTemperature>210</globalExtruderTemperature>
     <globalBedTemperature>60</globalBedTemperature>
-    <globalExtrusionMultiplier>0.9</globalExtrusionMultiplier>
+    <globalExtrusionMultiplier>1</globalExtrusionMultiplier>
     <fanSpeed>
       <setpoint layer="1" speed="0"/>
       <setpoint layer="2" speed="100"/>
     </fanSpeed>
-	<defaultSpeed>2400</defaultSpeed>
+    <defaultSpeed>2400</defaultSpeed>
     <outlineUnderspeed>0.5</outlineUnderspeed>
     <solidInfillUnderspeed>0.8</solidInfillUnderspeed>
     <supportUnderspeed>0.8</supportUnderspeed>
@@ -230,8 +230,8 @@
       <coastingDistance>0.2</coastingDistance>
       <useWipe>0</useWipe>
       <wipeDistance>5</wipeDistance>
-    </extruder>		
-	<startingGcode>G28 ; home all axes,M420 S1 ; Enable Mesh Bed Leveling,;M900 K0.25 ; Linear Advance,G1 X5 Y10 Z0.2 F3000 ; get ready to prime,;G92 E0 ; reset extrusion distance,G1 X160 E15 F600 ; prime nozzle,G1 X180 F5000 ; quick wipe</startingGcode>
+    </extruder>
+    <startingGcode>G28 ; home all axes,M420 S1 ; Enable Mesh Bed Leveling,M900 K0.00 ; Linear Advance,G1 E15 F225 ; purge nozzle,G1 X5 Y30 Z0.1 E0.5 F1200 ; slow wipe</startingGcode>
   </autoConfigureMaterial>
   <autoConfigureMaterial name="ABS">
     <globalExtruderTemperature>235</globalExtruderTemperature>
@@ -268,8 +268,8 @@
       <coastingDistance>0.2</coastingDistance>
       <useWipe>0</useWipe>
       <wipeDistance>5</wipeDistance>
-    </extruder>		
-	<startingGcode>G28 ; home all axes,M420 S1 ; Enable Mesh Bed Leveling,;M900 K0.25 ; Linear Advance,G1 X5 Y10 Z0.2 F3000 ; get ready to prime,;G92 E0 ; reset extrusion distance,G1 X160 E15 F600 ; prime nozzle,G1 X180 F5000 ; quick wipe</startingGcode>
+    </extruder>
+    <startingGcode>G28 ; home all axes,M420 S1 ; Enable Mesh Bed Leveling,M900 K0.00 ; Linear Advance,G1 E15 F225 ; purge nozzle,G1 X5 Y30 Z0.1 E0.5 F1200 ; slow wipe</startingGcode>
   </autoConfigureMaterial>
   <autoConfigureMaterial name="PVA">
     <globalExtruderTemperature>195</globalExtruderTemperature>
@@ -279,7 +279,7 @@
       <setpoint layer="1" speed="0"/>
       <setpoint layer="2" speed="100"/>
     </fanSpeed>
-	<defaultSpeed>2400</defaultSpeed>
+    <defaultSpeed>2400</defaultSpeed>
     <outlineUnderspeed>0.5</outlineUnderspeed>
     <solidInfillUnderspeed>0.8</solidInfillUnderspeed>
     <supportUnderspeed>0.8</supportUnderspeed>
@@ -291,7 +291,7 @@
     <bridgingSpeedMultiplier>1</bridgingSpeedMultiplier>
     <useFixedBridgingAngle>0</useFixedBridgingAngle>
     <fixedBridgingAngle>0</fixedBridgingAngle>
-    <applyBridgingToPerimeters>0</applyBridgingToPerimeters>	
+    <applyBridgingToPerimeters>0</applyBridgingToPerimeters>
     <extruder name="Primary Extruder">
       <toolheadNumber>0</toolheadNumber>
       <diameter>0.4</diameter>
@@ -307,8 +307,8 @@
       <coastingDistance>0.2</coastingDistance>
       <useWipe>0</useWipe>
       <wipeDistance>5</wipeDistance>
-    </extruder>		
-	<startingGcode>G28 ; home all axes,M420 S1 ; Enable Mesh Bed Leveling,;M900 K0.25 ; Linear Advance,G1 X5 Y10 Z0.2 F3000 ; get ready to prime,;G92 E0 ; reset extrusion distance,G1 X160 E15 F600 ; prime nozzle,G1 X180 F5000 ; quick wipe</startingGcode>
+    </extruder>
+    <startingGcode>G28 ; home all axes,M420 S1 ; Enable Mesh Bed Leveling,M900 K0.00 ; Linear Advance,G1 E15 F225 ; purge nozzle,G1 X5 Y30 Z0.1 E0.5 F1200 ; slow wipe</startingGcode>
   </autoConfigureMaterial>
   <autoConfigureMaterial name="Nylon">
     <globalExtruderTemperature>235</globalExtruderTemperature>
@@ -317,7 +317,7 @@
     <fanSpeed>
       <setpoint layer="1" speed="0"/>
     </fanSpeed>
-	<defaultSpeed>2400</defaultSpeed>
+    <defaultSpeed>2400</defaultSpeed>
     <outlineUnderspeed>0.5</outlineUnderspeed>
     <solidInfillUnderspeed>0.8</solidInfillUnderspeed>
     <supportUnderspeed>0.8</supportUnderspeed>
@@ -329,7 +329,7 @@
     <bridgingSpeedMultiplier>1</bridgingSpeedMultiplier>
     <useFixedBridgingAngle>0</useFixedBridgingAngle>
     <fixedBridgingAngle>0</fixedBridgingAngle>
-    <applyBridgingToPerimeters>0</applyBridgingToPerimeters>	
+    <applyBridgingToPerimeters>0</applyBridgingToPerimeters>
     <extruder name="Primary Extruder">
       <toolheadNumber>0</toolheadNumber>
       <diameter>0.4</diameter>
@@ -345,8 +345,8 @@
       <coastingDistance>0.2</coastingDistance>
       <useWipe>0</useWipe>
       <wipeDistance>5</wipeDistance>
-    </extruder>	
-	<startingGcode>G28 ; home all axes,M420 S1 ; Enable Mesh Bed Leveling,;M900 K0.25 ; Linear Advance,G1 X5 Y10 Z0.2 F3000 ; get ready to prime,;G92 E0 ; reset extrusion distance,G1 X160 E15 F600 ; prime nozzle,G1 X180 F5000 ; quick wipe</startingGcode>
+    </extruder>
+    <startingGcode>G28 ; home all axes,M420 S1 ; Enable Mesh Bed Leveling,M900 K0.00 ; Linear Advance,G1 E15 F225 ; purge nozzle,G1 X5 Y30 Z0.1 E0.5 F1200 ; slow wipe</startingGcode>
   </autoConfigureMaterial>
   <autoConfigureQuality name="Fast">
     <layerHeight>0.3</layerHeight>
@@ -355,7 +355,7 @@
     <skirtLayers>1</skirtLayers>
     <infillPercentage>15</infillPercentage>
     <supportInfillPercentage>25</supportInfillPercentage>
-	<firstLayerHeightPercentage>100</firstLayerHeightPercentage>
+    <firstLayerHeightPercentage>100</firstLayerHeightPercentage>
     <firstLayerWidthPercentage>150</firstLayerWidthPercentage>
     <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
   </autoConfigureQuality>
@@ -382,7 +382,7 @@
     <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
   </autoConfigureQuality>
   <autoConfigureMaterial name="TPU">
-    <globalExtruderTemperature>200</globalExtruderTemperature>
+    <globalExtruderTemperature>210</globalExtruderTemperature>
     <globalBedTemperature>40</globalBedTemperature>
     <globalExtrusionMultiplier>1.03</globalExtrusionMultiplier>
     <fanSpeed>
@@ -418,7 +418,7 @@
       <useWipe>0</useWipe>
       <wipeDistance>5</wipeDistance>
     </extruder>
-    <startingGcode>G28 ; home all axes,M420 S1 ; Enable Mesh Bed Leveling,M900 K0.00 ; Linear Advance,G1 X5 Y10 Z0.2 F3000 ; get ready to prime,;G92 E0 ; reset extrusion distance,G1 X160 E15 F600 ; prime nozzle,G1 X180 F5000 ; quick wipe</startingGcode>
+    <startingGcode>G28 ; home all axes,M420 S1 ; Enable Mesh Bed Leveling,M900 K0.00 ; Linear Advance,G1 E15 F225 ; purge nozzle,G1 X5 Y30 Z0.1 E0.5 F1200 ; slow wipe,</startingGcode>
   </autoConfigureMaterial>
   <autoConfigureMaterial name="PETG">
     <globalExtruderTemperature>240</globalExtruderTemperature>
@@ -428,7 +428,7 @@
       <setpoint layer="1" speed="0"/>
       <setpoint layer="2" speed="100"/>
     </fanSpeed>
-	<defaultSpeed>2400</defaultSpeed>
+    <defaultSpeed>2400</defaultSpeed>
     <outlineUnderspeed>0.5</outlineUnderspeed>
     <solidInfillUnderspeed>0.8</solidInfillUnderspeed>
     <supportUnderspeed>0.8</supportUnderspeed>
@@ -440,7 +440,7 @@
     <bridgingSpeedMultiplier>1</bridgingSpeedMultiplier>
     <useFixedBridgingAngle>0</useFixedBridgingAngle>
     <fixedBridgingAngle>0</fixedBridgingAngle>
-    <applyBridgingToPerimeters>0</applyBridgingToPerimeters>	
+    <applyBridgingToPerimeters>0</applyBridgingToPerimeters>
     <extruder name="Primary Extruder">
       <toolheadNumber>0</toolheadNumber>
       <diameter>0.4</diameter>
@@ -456,7 +456,7 @@
       <coastingDistance>0.2</coastingDistance>
       <useWipe>0</useWipe>
       <wipeDistance>5</wipeDistance>
-    </extruder>		
-	<startingGcode>G28 ; home all axes,M420 S1 ; Enable Mesh Bed Leveling,;M900 K0.25 ; Linear Advance,G1 X5 Y10 Z0.2 F3000 ; get ready to prime,;G92 E0 ; reset extrusion distance,G1 X160 E15 F600 ; prime nozzle,G1 X180 F5000 ; quick wipe</startingGcode>
+    </extruder>
+    <startingGcode>G28 ; home all axes,M420 S1 ; Enable Mesh Bed Leveling,M900 K0.00 ; Linear Advance,G1 E15 F225 ; purge nozzle,G1 X5 Y30 Z0.1 E0.5 F1200 ; slow wipe</startingGcode>
   </autoConfigureMaterial>
 </profile>
