@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
-<profile name="M2 - Marlin v2.0.x" version="2020-05-28 08:32:47" app="S3D-Software 4.1.2">
+<profile name="M2 - Marlin v2.0.x" version="2020-07-27 12:52:34" app="S3D-Software 4.1.2">
   <baseProfile>Default (modified)</baseProfile>
   <printMaterial>ABS</printMaterial>
-  <printQuality>0.3</printQuality>
+  <printQuality>0.16</printQuality>
   <printExtruders></printExtruders>
   <extruder name="Primary Extruder">
     <toolheadNumber>0</toolheadNumber>
     <diameter>0.35</diameter>
-    <autoWidth>0</autoWidth>
-    <width>0.4</width>
-    <extrusionMultiplier>0.98</extrusionMultiplier>
+    <autoWidth>1</autoWidth>
+    <width>0.42</width>
+    <extrusionMultiplier>0.94</extrusionMultiplier>
     <useRetract>1</useRetract>
     <retractionDistance>1</retractionDistance>
     <extraRestartDistance>0</extraRestartDistance>
-    <retractionZLift>0.5</retractionZLift>
+    <retractionZLift>0.32</retractionZLift>
     <retractionSpeed>3000</retractionSpeed>
     <useCoasting>0</useCoasting>
     <coastingDistance>1</coastingDistance>
@@ -21,9 +21,9 @@
     <wipeDistance>5</wipeDistance>
   </extruder>
   <primaryExtruder>0</primaryExtruder>
-  <layerHeight>0.3</layerHeight>
-  <topSolidLayers>3</topSolidLayers>
-  <bottomSolidLayers>3</bottomSolidLayers>
+  <layerHeight>0.16</layerHeight>
+  <topSolidLayers>4</topSolidLayers>
+  <bottomSolidLayers>4</bottomSolidLayers>
   <perimeterOutlines>3</perimeterOutlines>
   <printPerimetersInsideOut>1</printPerimetersInsideOut>
   <startPointOption>3</startPointOption>
@@ -79,12 +79,12 @@
   <denseSupportLayers>4</denseSupportLayers>
   <denseSupportInfillPercentage>50</denseSupportInfillPercentage>
   <supportLayerInterval>1</supportLayerInterval>
-  <supportHorizontalPartOffset>0.4</supportHorizontalPartOffset>
+  <supportHorizontalPartOffset>0.3</supportHorizontalPartOffset>
   <supportUpperSeparationLayers>1</supportUpperSeparationLayers>
   <supportLowerSeparationLayers>1</supportLowerSeparationLayers>
   <supportType>0</supportType>
-  <supportGridSpacing>3</supportGridSpacing>
-  <maxOverhangAngle>50</maxOverhangAngle>
+  <supportGridSpacing>2</supportGridSpacing>
+  <maxOverhangAngle>60</maxOverhangAngle>
   <supportAngles>0</supportAngles>
   <temperatureController name="Primary Extruder">
     <temperatureNumber>0</temperatureNumber>
@@ -142,7 +142,7 @@
   <baudRateOverride>115200</baudRateOverride>
   <overridePrinterModels>0</overridePrinterModels>
   <printerModelsOverride></printerModelsOverride>
-  <startingGcode>M420 S0 ; Disable Mesh Bed Leveling,G28 ; home all axes,M420 S1 ; Enable Mesh Bed Leveling,M204 P1500.00 R3000.00 T3000.00 ; Set Acceleration,M207 S1.00 W20.00 F3000.00 Z0.60 ; Retraction Z lift 2x layer height,M208 S0.00 W20.00 F3000.00 ; Retraction Recover,M209 S1 ; Enable Firmware Retraction,M900 K0.08 ; Linear Advance,G1 Y50 Z0.3 F9600 ; move forward to avoid binder clips,G1 X205 Z10 ; move off platform,G1 Z0.4 ; position nozzle,;G92 E0 ; zero extruder,G1 E25 F225 ; purge nozzle,;G92 E0 ; zero extruder,G1 X190 Z0.1 E1.0 F1200 ; slow wipe,G1 X180 Z0.25 ; lift</startingGcode>
+  <startingGcode>M420 S0 ; Disable Mesh Bed Leveling,G28 ; home all axes,M420 S1 ; Enable Mesh Bed Leveling,M204 P1500.00 R3000.00 T3000.00 ; Set Acceleration,M207 S1.00 W20.00 F3000.00 Z0.32 ; Retraction Z lift 2x layer height,M208 S0.00 W20.00 F3000.00 ; Retraction Recover,M209 S1 ; Enable Firmware Retraction,M900 K0.08 ; Linear Advance,G1 Y50 Z0.3 F9600 ; move forward to avoid binder clips,G1 X205 Z10 ; move off platform,G1 Z0.4 ; position nozzle,;G92 E0 ; zero extruder,G1 E25 F225 ; purge nozzle,;G92 E0 ; zero extruder,G1 X190 Z0.1 E1.0 F1200 ; slow wipe,G1 X180 Z0.25 ; lift</startingGcode>
   <layerChangeGcode></layerChangeGcode>
   <retractionGcode></retractionGcode>
   <toolChangeGcode></toolChangeGcode>
@@ -154,7 +154,7 @@
   <defaultSpeed>4800</defaultSpeed>
   <outlineUnderspeed>0.6</outlineUnderspeed>
   <solidInfillUnderspeed>0.8</solidInfillUnderspeed>
-  <supportUnderspeed>0.8</supportUnderspeed>
+  <supportUnderspeed>0.75</supportUnderspeed>
   <rapidXYspeed>12000</rapidXYspeed>
   <rapidZspeed>1200</rapidZspeed>
   <minBridgingArea>50</minBridgingArea>
@@ -168,7 +168,7 @@
   <filamentPricesPerKg>38|38|38|38|38|38</filamentPricesPerKg>
   <filamentDensities>1.25|1.25|1.25|1.25|1.25|1.25</filamentDensities>
   <useMinPrintHeight>0</useMinPrintHeight>
-  <minPrintHeight>0</minPrintHeight>
+  <minPrintHeight>60.65</minPrintHeight>
   <useMaxPrintHeight>0</useMaxPrintHeight>
   <maxPrintHeight>0.45</maxPrintHeight>
   <useDiaphragm>0</useDiaphragm>
@@ -180,7 +180,7 @@
   <useRetractionMinTravel>1</useRetractionMinTravel>
   <retractionMinTravel>1</retractionMinTravel>
   <retractWhileWiping>0</retractWhileWiping>
-  <onlyWipeOutlines>1</onlyWipeOutlines>
+  <onlyWipeOutlines>0</onlyWipeOutlines>
   <avoidCrossingOutline>0</avoidCrossingOutline>
   <maxMovementDetourFactor>3</maxMovementDetourFactor>
   <toolChangeRetractionDistance>0</toolChangeRetractionDistance>
@@ -203,7 +203,21 @@
       <setpoint layer="1" temperature="110"/>
       <setpoint layer="4" temperature="100"/>
     </temperatureController>
-    <globalExtrusionMultiplier>0.98</globalExtrusionMultiplier>
+  <extruder name="Primary Extruder">
+    <toolheadNumber>0</toolheadNumber>
+    <diameter>0.35</diameter>
+    <autoWidth>1</autoWidth>
+    <width>0.42</width>
+    <extrusionMultiplier>0.94</extrusionMultiplier>
+    <useRetract>1</useRetract>
+    <retractionDistance>1</retractionDistance>
+    <extraRestartDistance>0</extraRestartDistance>
+    <retractionSpeed>3000</retractionSpeed>
+    <useCoasting>0</useCoasting>
+    <coastingDistance>1</coastingDistance>
+    <useWipe>0</useWipe>
+    <wipeDistance>5</wipeDistance>
+  </extruder>
     <fanSpeed>
       <setpoint layer="1" speed="100"/>
     </fanSpeed>
@@ -217,7 +231,21 @@
       <setpoint layer="1" temperature="110"/>
       <setpoint layer="4" temperature="100"/>
     </temperatureController>
-    <globalExtrusionMultiplier>0.98</globalExtrusionMultiplier>
+  <extruder name="Primary Extruder">
+    <toolheadNumber>0</toolheadNumber>
+    <diameter>0.35</diameter>
+    <autoWidth>1</autoWidth>
+    <width>0.42</width>
+    <extrusionMultiplier>0.94</extrusionMultiplier>
+    <useRetract>1</useRetract>
+    <retractionDistance>1</retractionDistance>
+    <extraRestartDistance>0</extraRestartDistance>
+    <retractionSpeed>3000</retractionSpeed>
+    <useCoasting>0</useCoasting>
+    <coastingDistance>1</coastingDistance>
+    <useWipe>0</useWipe>
+    <wipeDistance>5</wipeDistance>
+  </extruder>
     <fanSpeed>
       <setpoint layer="1" speed="0"/>
       <setpoint layer="3" speed="25"/>
@@ -232,41 +260,75 @@
       <setpoint layer="1" temperature="80"/>
       <setpoint layer="3" temperature="70"/>
     </temperatureController>
-    <globalExtrusionMultiplier>0.95</globalExtrusionMultiplier>
+  <extruder name="Primary Extruder">
+    <toolheadNumber>0</toolheadNumber>
+    <diameter>0.35</diameter>
+    <autoWidth>1</autoWidth>
+    <width>0.42</width>
+    <extrusionMultiplier>0.94</extrusionMultiplier>
+    <useRetract>1</useRetract>
+    <retractionDistance>1</retractionDistance>
+    <extraRestartDistance>0</extraRestartDistance>
+    <retractionSpeed>3000</retractionSpeed>
+    <useCoasting>0</useCoasting>
+    <coastingDistance>1</coastingDistance>
+    <useWipe>0</useWipe>
+    <wipeDistance>5</wipeDistance>
+  </extruder>
     <fanSpeed>
       <setpoint layer="1" speed="0"/>
-      <setpoint layer="3" speed="25"/>
+      <setpoint layer="3" speed="20"/>
     </fanSpeed>
   </autoConfigureMaterial>
   <autoConfigureMaterial name="PLA">
     <globalExtruderTemperature>190</globalExtruderTemperature>
     <globalBedTemperature>60</globalBedTemperature>
-    <globalExtrusionMultiplier>0.9</globalExtrusionMultiplier>
+  <extruder name="Primary Extruder">
+    <toolheadNumber>0</toolheadNumber>
+    <diameter>0.35</diameter>
+    <autoWidth>1</autoWidth>
+    <width>0.42</width>
+    <extrusionMultiplier>0.94</extrusionMultiplier>
+    <useRetract>1</useRetract>
+    <retractionDistance>1</retractionDistance>
+    <extraRestartDistance>0</extraRestartDistance>
+    <retractionSpeed>3000</retractionSpeed>
+    <useCoasting>0</useCoasting>
+    <coastingDistance>1</coastingDistance>
+    <useWipe>0</useWipe>
+    <wipeDistance>5</wipeDistance>
+  </extruder>
     <fanSpeed>
       <setpoint layer="1" speed="0"/>
       <setpoint layer="2" speed="100"/>
     </fanSpeed>
   </autoConfigureMaterial>
-  <autoConfigureQuality name="0.3">
-    <layerHeight>0.3</layerHeight>
+  <autoConfigureQuality name="0.32">
+    <layerHeight>0.32</layerHeight>
     <topSolidLayers>3</topSolidLayers>
     <bottomSolidLayers>3</bottomSolidLayers>
     <skirtLayers>1</skirtLayers>
     <infillPercentage>50</infillPercentage>
     <supportInfillPercentage>40</supportInfillPercentage>
-    <startingGcode>M420 S0 ; Disable Mesh Bed Leveling,G28 ; home all axes,M420 S1 ; Enable Mesh Bed Leveling,M204 P1500.00 R3000.00 T3000.00 ; Set Acceleration,M207 S1.00 W20.00 F3000.00 Z0.60 ; Retraction Z lift 2x layer height,M208 S0.00 W20.00 F3000.00 ; Retraction Recover,M209 S1 ; Enable Firmware Retraction,M900 K0.08 ; Linear Advance,G1 Y50 Z0.3 F9600 ; move forward to avoid binder clips,G1 X205 Z10 ; move off platform,G1 Z0.4 ; position nozzle,;G92 E0 ; zero extruder,G1 E25 F225 ; purge nozzle,;G92 E0 ; zero extruder,G1 X190 Z0.1 E1.0 F1200 ; slow wipe,G1 X180 Z0.25 ; lift</startingGcode>
+  <extruder name="Primary Extruder">
+    <retractionZLift>0.64</retractionZLift>
+  </extruder>
+    <startingGcode>M420 S0 ; Disable Mesh Bed Leveling,G28 ; home all axes,M420 S1 ; Enable Mesh Bed Leveling,M204 P1500.00 R3000.00 T3000.00 ; Set Acceleration,M207 S1.00 W20.00 F3000.00 Z0.64 ; Retraction Z lift 2x layer height,M208 S0.00 W20.00 F3000.00 ; Retraction Recover,M209 S1 ; Enable Firmware Retraction,M900 K0.08 ; Linear Advance,G1 Y50 Z0.3 F9600 ; move forward to avoid binder clips,G1 X205 Z10 ; move off platform,G1 Z0.4 ; position nozzle,;G92 E0 ; zero extruder,G1 E25 F225 ; purge nozzle,;G92 E0 ; zero extruder,G1 X190 Z0.1 E1.0 F1200 ; slow wipe,G1 X180 Z0.25 ; lift</startingGcode>
     <firstLayerHeightPercentage>125</firstLayerHeightPercentage>
     <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
     <firstLayerUnderspeed>0.35</firstLayerUnderspeed>
   </autoConfigureQuality>
-  <autoConfigureQuality name="0.25">
-    <layerHeight>0.25</layerHeight>
-    <topSolidLayers>4</topSolidLayers>
-    <bottomSolidLayers>4</bottomSolidLayers>
+  <autoConfigureQuality name="0.24">
+    <layerHeight>0.24</layerHeight>
+    <topSolidLayers>2</topSolidLayers>
+    <bottomSolidLayers>2</bottomSolidLayers>
     <skirtLayers>1</skirtLayers>
     <infillPercentage>50</infillPercentage>
     <supportInfillPercentage>40</supportInfillPercentage>
-    <startingGcode>M420 S0 ; Disable Mesh Bed Leveling,G28 ; home all axes,M420 S1 ; Enable Mesh Bed Leveling,M204 P1500.00 R3000.00 T3000.00 ; Set Acceleration,M207 S1.00 W20.00 F3000.00 Z0.50 ; Retraction Z lift 2x layer height,M208 S0.00 W20.00 F3000.00 ; Retraction Recover,M209 S1 ; Enable Firmware Retraction,M900 K0.08 ; Linear Advance,G1 Y50 Z0.3 F9600 ; move forward to avoid binder clips,G1 X205 Z10 ; move off platform,G1 Z0.4 ; position nozzle,;G92 E0 ; zero extruder,G1 E25 F225 ; purge nozzle,;G92 E0 ; zero extruder,G1 X190 Z0.1 E1.0 F1200 ; slow wipe,G1 X180 Z0.25 ; lift</startingGcode>
+  <extruder name="Primary Extruder">
+    <retractionZLift>0.48</retractionZLift>
+  </extruder>
+    <startingGcode>M420 S0 ; Disable Mesh Bed Leveling,G28 ; home all axes,M420 S1 ; Enable Mesh Bed Leveling,M204 P1500.00 R3000.00 T3000.00 ; Set Acceleration,M207 S1.00 W20.00 F3000.00 Z0.48 ; Retraction Z lift 2x layer height,M208 S0.00 W20.00 F3000.00 ; Retraction Recover,M209 S1 ; Enable Firmware Retraction,M900 K0.08 ; Linear Advance,G1 Y50 Z0.3 F9600 ; move forward to avoid binder clips,G1 X205 Z10 ; move off platform,G1 Z0.4 ; position nozzle,;G92 E0 ; zero extruder,G1 E25 F225 ; purge nozzle,;G92 E0 ; zero extruder,G1 X190 Z0.1 E1.0 F1200 ; slow wipe,G1 X180 Z0.25 ; lift</startingGcode>
     <firstLayerHeightPercentage>125</firstLayerHeightPercentage>
     <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
     <firstLayerUnderspeed>0.35</firstLayerUnderspeed>
@@ -278,31 +340,40 @@
     <skirtLayers>1</skirtLayers>
     <infillPercentage>50</infillPercentage>
     <supportInfillPercentage>40</supportInfillPercentage>
+  <extruder name="Primary Extruder">
+    <retractionZLift>0.40</retractionZLift>
+  </extruder>
     <startingGcode>M420 S0 ; Disable Mesh Bed Leveling,G28 ; home all axes,M420 S1 ; Enable Mesh Bed Leveling,M204 P1500.00 R3000.00 T3000.00 ; Set Acceleration,M207 S1.00 W20.00 F3000.00 Z0.40 ; Retraction Z lift 2x layer height,M208 S0.00 W20.00 F3000.00 ; Retraction Recover,M209 S1 ; Enable Firmware Retraction,M900 K0.08 ; Linear Advance,G1 Y50 Z0.3 F9600 ; move forward to avoid binder clips,G1 X205 Z10 ; move off platform,G1 Z0.4 ; position nozzle,;G92 E0 ; zero extruder,G1 E25 F225 ; purge nozzle,;G92 E0 ; zero extruder,G1 X190 Z0.1 E1.0 F1200 ; slow wipe,G1 X180 Z0.25 ; lift</startingGcode>
-    <firstLayerHeightPercentage>125</firstLayerHeightPercentage>
+    <firstLayerHeightPercentage>100</firstLayerHeightPercentage>
     <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
     <firstLayerUnderspeed>0.35</firstLayerUnderspeed>
   </autoConfigureQuality>
-  <autoConfigureQuality name="0.15">
-    <layerHeight>0.15</layerHeight>
+  <autoConfigureQuality name="0.16">
+    <layerHeight>0.16</layerHeight>
     <topSolidLayers>4</topSolidLayers>
     <bottomSolidLayers>4</bottomSolidLayers>
     <skirtLayers>1</skirtLayers>
     <infillPercentage>50</infillPercentage>
     <supportInfillPercentage>40</supportInfillPercentage>
-    <startingGcode>M420 S0 ; Disable Mesh Bed Leveling,G28 ; home all axes,M420 S1 ; Enable Mesh Bed Leveling,M204 P1500.00 R3000.00 T3000.00 ; Set Acceleration,M207 S1.00 W20.00 F3000.00 Z0.30 ; Retraction Z lift 2x layer height,M208 S0.00 W20.00 F3000.00 ; Retraction Recover,M209 S1 ; Enable Firmware Retraction,M900 K0.08 ; Linear Advance,G1 Y50 Z0.3 F9600 ; move forward to avoid binder clips,G1 X205 Z10 ; move off platform,G1 Z0.4 ; position nozzle,;G92 E0 ; zero extruder,G1 E25 F225 ; purge nozzle,;G92 E0 ; zero extruder,G1 X190 Z0.1 E1.0 F1200 ; slow wipe,G1 X180 Z0.25 ; lift</startingGcode>
+  <extruder name="Primary Extruder">
+    <retractionZLift>0.32</retractionZLift>
+  </extruder>
+    <startingGcode>M420 S0 ; Disable Mesh Bed Leveling,G28 ; home all axes,M420 S1 ; Enable Mesh Bed Leveling,M204 P1500.00 R3000.00 T3000.00 ; Set Acceleration,M207 S1.00 W20.00 F3000.00 Z0.32 ; Retraction Z lift 2x layer height,M208 S0.00 W20.00 F3000.00 ; Retraction Recover,M209 S1 ; Enable Firmware Retraction,M900 K0.08 ; Linear Advance,G1 Y50 Z0.3 F9600 ; move forward to avoid binder clips,G1 X205 Z10 ; move off platform,G1 Z0.4 ; position nozzle,;G92 E0 ; zero extruder,G1 E25 F225 ; purge nozzle,;G92 E0 ; zero extruder,G1 X190 Z0.1 E1.0 F1200 ; slow wipe,G1 X180 Z0.25 ; lift</startingGcode>
     <firstLayerHeightPercentage>125</firstLayerHeightPercentage>
     <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
     <firstLayerUnderspeed>0.35</firstLayerUnderspeed>
   </autoConfigureQuality>
-    <autoConfigureQuality name="0.10">
-    <layerHeight>0.10</layerHeight>
+  <autoConfigureQuality name="0.12">
+    <layerHeight>0.12</layerHeight>
     <topSolidLayers>4</topSolidLayers>
     <bottomSolidLayers>4</bottomSolidLayers>
     <skirtLayers>1</skirtLayers>
     <infillPercentage>50</infillPercentage>
     <supportInfillPercentage>40</supportInfillPercentage>
-    <startingGcode>M420 S0 ; Disable Mesh Bed Leveling,G28 ; home all axes,M420 S1 ; Enable Mesh Bed Leveling,M204 P1500.00 R3000.00 T3000.00 ; Set Acceleration,M207 S1.00 W20.00 F3000.00 Z0.20 ; Retraction Z lift 2x layer height,M208 S0.00 W20.00 F3000.00 ; Retraction Recover,M209 S1 ; Enable Firmware Retraction,M900 K0.08 ; Linear Advance,G1 Y50 Z0.3 F9600 ; move forward to avoid binder clips,G1 X205 Z10 ; move off platform,G1 Z0.4 ; position nozzle,;G92 E0 ; zero extruder,G1 E25 F225 ; purge nozzle,;G92 E0 ; zero extruder,G1 X190 Z0.1 E1.0 F1200 ; slow wipe,G1 X180 Z0.25 ; lift</startingGcode>
+  <extruder name="Primary Extruder">
+    <retractionZLift>0.24</retractionZLift>
+  </extruder>
+    <startingGcode>M420 S0 ; Disable Mesh Bed Leveling,G28 ; home all axes,M420 S1 ; Enable Mesh Bed Leveling,M204 P1500.00 R3000.00 T3000.00 ; Set Acceleration,M207 S1.00 W20.00 F3000.00 Z0.24 ; Retraction Z lift 2x layer height,M208 S0.00 W20.00 F3000.00 ; Retraction Recover,M209 S1 ; Enable Firmware Retraction,M900 K0.08 ; Linear Advance,G1 Y50 Z0.3 F9600 ; move forward to avoid binder clips,G1 X205 Z10 ; move off platform,G1 Z0.4 ; position nozzle,;G92 E0 ; zero extruder,G1 E25 F225 ; purge nozzle,;G92 E0 ; zero extruder,G1 X190 Z0.1 E1.0 F1200 ; slow wipe,G1 X180 Z0.25 ; lift</startingGcode>
     <firstLayerHeightPercentage>125</firstLayerHeightPercentage>
     <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
     <firstLayerUnderspeed>0.35</firstLayerUnderspeed>
