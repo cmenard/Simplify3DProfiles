@@ -1,38 +1,38 @@
 <?xml version="1.0"?>
-<profile name="Creality Ender 3 Pro v2.0.x" version="2020-07-29 09:59:44" app="S3D-Software 4.1.2">
+<profile name="Creality Ender 3 Pro v2.0.x" version="2020-07-29 12:51:33" app="S3D-Software 4.1.2">
   <baseProfile></baseProfile>
   <printMaterial>TPU</printMaterial>
-  <printQuality>.20</printQuality>
+  <printQuality>.24</printQuality>
   <printExtruders></printExtruders>
   <extruder name="Primary Extruder">
     <toolheadNumber>0</toolheadNumber>
     <diameter>0.4</diameter>
-    <autoWidth>1</autoWidth>
-    <width>0.48</width>
+    <autoWidth>0</autoWidth>
+    <width>0.38</width>
     <extrusionMultiplier>1</extrusionMultiplier>
     <useRetract>1</useRetract>
     <retractionDistance>4</retractionDistance>
     <extraRestartDistance>0</extraRestartDistance>
     <retractionZLift>0</retractionZLift>
-    <retractionSpeed>3000</retractionSpeed>
+    <retractionSpeed>2400</retractionSpeed>
     <useCoasting>1</useCoasting>
     <coastingDistance>0.5</coastingDistance>
     <useWipe>0</useWipe>
     <wipeDistance>5</wipeDistance>
   </extruder>
   <primaryExtruder>0</primaryExtruder>
-  <layerHeight>0.2</layerHeight>
-  <topSolidLayers>3</topSolidLayers>
-  <bottomSolidLayers>3</bottomSolidLayers>
+  <layerHeight>0.24</layerHeight>
+  <topSolidLayers>4</topSolidLayers>
+  <bottomSolidLayers>4</bottomSolidLayers>
   <perimeterOutlines>2</perimeterOutlines>
   <printPerimetersInsideOut>1</printPerimetersInsideOut>
   <startPointOption>3</startPointOption>
   <startPointOriginX>0</startPointOriginX>
   <startPointOriginY>0</startPointOriginY>
-  <sequentialIslands>1</sequentialIslands>
+  <sequentialIslands>0</sequentialIslands>
   <spiralVaseMode>0</spiralVaseMode>
   <firstLayerHeightPercentage>100</firstLayerHeightPercentage>
-  <firstLayerWidthPercentage>150</firstLayerWidthPercentage>
+  <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
   <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
   <useRaft>0</useRaft>
   <raftExtruder>0</raftExtruder>
@@ -44,7 +44,7 @@
   <aboveRaftSpeedMultiplier>0.3</aboveRaftSpeedMultiplier>
   <useSkirt>1</useSkirt>
   <skirtExtruder>0</skirtExtruder>
-  <skirtLayers>1</skirtLayers>
+  <skirtLayers>2</skirtLayers>
   <skirtOutlines>3</skirtOutlines>
   <skirtOffset>4</skirtOffset>
   <usePrimePillar>0</usePrimePillar>
@@ -64,8 +64,8 @@
   <externalInfillPattern>Rectilinear</externalInfillPattern>
   <infillPercentage>30</infillPercentage>
   <outlineOverlapPercentage>25</outlineOverlapPercentage>
-  <infillExtrusionWidthPercentage>125</infillExtrusionWidthPercentage>
-  <minInfillLength>0.4</minInfillLength>
+  <infillExtrusionWidthPercentage>100</infillExtrusionWidthPercentage>
+  <minInfillLength>0.5</minInfillLength>
   <infillLayerInterval>1</infillLayerInterval>
   <internalInfillAngles>45,-45</internalInfillAngles>
   <overlapInternalInfillAngles>0</overlapInternalInfillAngles>
@@ -151,12 +151,12 @@
   <celebration>0</celebration>
   <celebrationSong>Random Song</celebrationSong>
   <postProcessing></postProcessing>
-  <defaultSpeed>2400</defaultSpeed>
+  <defaultSpeed>3000</defaultSpeed>
   <outlineUnderspeed>0.5</outlineUnderspeed>
   <solidInfillUnderspeed>0.8</solidInfillUnderspeed>
   <supportUnderspeed>0.8</supportUnderspeed>
   <rapidXYspeed>7200</rapidXYspeed>
-  <rapidZspeed>1000</rapidZspeed>
+  <rapidZspeed>1002</rapidZspeed>
   <minBridgingArea>50</minBridgingArea>
   <bridgingExtraInflation>0</bridgingExtraInflation>
   <bridgingExtrusionMultiplier>1</bridgingExtrusionMultiplier>
@@ -188,7 +188,7 @@
   <toolChangeRetractionSpeed>600</toolChangeRetractionSpeed>
   <externalThinWallType>0</externalThinWallType>
   <internalThinWallType>2</internalThinWallType>
-  <thinWallAllowedOverlapPercentage>10</thinWallAllowedOverlapPercentage>
+  <thinWallAllowedOverlapPercentage>20</thinWallAllowedOverlapPercentage>
   <singleExtrusionMinLength>1</singleExtrusionMinLength>
   <singleExtrusionMinPrintingWidthPercentage>50</singleExtrusionMinPrintingWidthPercentage>
   <singleExtrusionMaxPrintingWidthPercentage>200</singleExtrusionMaxPrintingWidthPercentage>
@@ -397,11 +397,24 @@
     <infillPercentage>30</infillPercentage>
     <supportInfillPercentage>40</supportInfillPercentage>
     <firstLayerHeightPercentage>100</firstLayerHeightPercentage>
-    <firstLayerWidthPercentage>150</firstLayerWidthPercentage>
+    <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
     <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
-	<extruder name="Primary Extruder">
+    <extruder name="Primary Extruder">
+      <toolheadNumber>0</toolheadNumber>
+      <diameter>0.4</diameter>
+      <autoWidth>0</autoWidth>
+      <width>0.38</width>
+      <extrusionMultiplier>1</extrusionMultiplier>
+      <useRetract>1</useRetract>
+      <retractionDistance>4</retractionDistance>
+      <extraRestartDistance>0</extraRestartDistance>
       <retractionZLift>0</retractionZLift>
-    </extruder>	
+      <retractionSpeed>2400</retractionSpeed>
+      <useCoasting>1</useCoasting>
+      <coastingDistance>0.5</coastingDistance>
+      <useWipe>0</useWipe>
+      <wipeDistance>5</wipeDistance>
+    </extruder>
   </autoConfigureQuality>
   <autoConfigureQuality name=".20">
     <layerHeight>0.2</layerHeight>
@@ -471,7 +484,7 @@
     <solidInfillUnderspeed>0.8</solidInfillUnderspeed>
     <supportUnderspeed>0.8</supportUnderspeed>
     <rapidXYspeed>7200</rapidXYspeed>
-    <rapidZspeed>1000</rapidZspeed>
+    <rapidZspeed>1002</rapidZspeed>
     <minBridgingArea>50</minBridgingArea>
     <bridgingExtraInflation>0</bridgingExtraInflation>
     <bridgingExtrusionMultiplier>1</bridgingExtrusionMultiplier>
@@ -482,14 +495,14 @@
     <extruder name="Primary Extruder">
       <toolheadNumber>0</toolheadNumber>
       <diameter>0.4</diameter>
-      <autoWidth>1</autoWidth>
-      <width>0.48</width>
+      <autoWidth>0</autoWidth>
+      <width>0.38</width>
       <extrusionMultiplier>1</extrusionMultiplier>
       <useRetract>1</useRetract>
       <retractionDistance>4</retractionDistance>
       <extraRestartDistance>0</extraRestartDistance>
       <retractionZLift>0</retractionZLift>
-      <retractionSpeed>3000</retractionSpeed>
+      <retractionSpeed>2400</retractionSpeed>
       <useCoasting>1</useCoasting>
       <coastingDistance>0.5</coastingDistance>
       <useWipe>0</useWipe>
