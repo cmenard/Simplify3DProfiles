@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<profile name="Creality Ender 3 Pro v2.0.x" version="2020-07-29 12:51:33" app="S3D-Software 4.1.2">
+<profile name="Creality Ender 3 Pro v2.0.x" version="2020-07-31 10:53:14" app="S3D-Software 4.1.2">
   <baseProfile></baseProfile>
   <printMaterial>TPU</printMaterial>
   <printQuality>.24</printQuality>
@@ -22,8 +22,8 @@
   </extruder>
   <primaryExtruder>0</primaryExtruder>
   <layerHeight>0.24</layerHeight>
-  <topSolidLayers>4</topSolidLayers>
-  <bottomSolidLayers>4</bottomSolidLayers>
+  <topSolidLayers>2</topSolidLayers>
+  <bottomSolidLayers>2</bottomSolidLayers>
   <perimeterOutlines>2</perimeterOutlines>
   <printPerimetersInsideOut>1</printPerimetersInsideOut>
   <startPointOption>3</startPointOption>
@@ -44,7 +44,7 @@
   <aboveRaftSpeedMultiplier>0.3</aboveRaftSpeedMultiplier>
   <useSkirt>1</useSkirt>
   <skirtExtruder>0</skirtExtruder>
-  <skirtLayers>2</skirtLayers>
+  <skirtLayers>1</skirtLayers>
   <skirtOutlines>3</skirtOutlines>
   <skirtOffset>4</skirtOffset>
   <usePrimePillar>0</usePrimePillar>
@@ -96,7 +96,7 @@
     <temperatureNumber>0</temperatureNumber>
     <isHeatedBed>1</isHeatedBed>
     <stabilizeAtStartup>1</stabilizeAtStartup>
-    <setpoint layer="1" temperature="60"/>
+    <setpoint layer="1" temperature="70"/>
   </temperatureController>
   <fanSpeed>
     <setpoint layer="1" speed="0"/>
@@ -202,12 +202,12 @@
       <setpoint layer="1" speed="0"/>
       <setpoint layer="2" speed="100"/>
     </fanSpeed>
-	<defaultSpeed>2400</defaultSpeed>
+    <defaultSpeed>2400</defaultSpeed>
     <outlineUnderspeed>0.5</outlineUnderspeed>
     <solidInfillUnderspeed>0.8</solidInfillUnderspeed>
     <supportUnderspeed>0.8</supportUnderspeed>
     <rapidXYspeed>4800</rapidXYspeed>
-    <rapidZspeed>1000</rapidZspeed>
+    <rapidZspeed>1002</rapidZspeed>
     <minBridgingArea>50</minBridgingArea>
     <bridgingExtraInflation>0</bridgingExtraInflation>
     <bridgingExtrusionMultiplier>0.9</bridgingExtrusionMultiplier>
@@ -219,14 +219,15 @@
       <toolheadNumber>0</toolheadNumber>
       <diameter>0.4</diameter>
       <autoWidth>0</autoWidth>
-      <width>0.42</width>
+      <width>0.38</width>
       <extrusionMultiplier>1</extrusionMultiplier>
       <useRetract>1</useRetract>
-      <retractionDistance>2</retractionDistance>
-      <extraRestartDistance>0.2</extraRestartDistance>
+      <retractionDistance>4</retractionDistance>
+      <extraRestartDistance>0</extraRestartDistance>
+      <retractionZLift>0.48</retractionZLift>
       <retractionSpeed>2400</retractionSpeed>
-      <useCoasting>0</useCoasting>
-      <coastingDistance>0.2</coastingDistance>
+      <useCoasting>1</useCoasting>
+      <coastingDistance>0.5</coastingDistance>
       <useWipe>0</useWipe>
       <wipeDistance>5</wipeDistance>
     </extruder>
@@ -261,6 +262,7 @@
       <useRetract>1</useRetract>
       <retractionDistance>2</retractionDistance>
       <extraRestartDistance>0.2</extraRestartDistance>
+      <retractionZLift>0</retractionZLift>
       <retractionSpeed>2400</retractionSpeed>
       <useCoasting>0</useCoasting>
       <coastingDistance>0.2</coastingDistance>
@@ -299,6 +301,7 @@
       <useRetract>1</useRetract>
       <retractionDistance>2</retractionDistance>
       <extraRestartDistance>0.2</extraRestartDistance>
+      <retractionZLift>0</retractionZLift>
       <retractionSpeed>2400</retractionSpeed>
       <useCoasting>0</useCoasting>
       <coastingDistance>0.2</coastingDistance>
@@ -336,6 +339,7 @@
       <useRetract>1</useRetract>
       <retractionDistance>2</retractionDistance>
       <extraRestartDistance>0.2</extraRestartDistance>
+      <retractionZLift>0</retractionZLift>
       <retractionSpeed>2400</retractionSpeed>
       <useCoasting>0</useCoasting>
       <coastingDistance>0.2</coastingDistance>
@@ -355,7 +359,20 @@
     <firstLayerWidthPercentage>150</firstLayerWidthPercentage>
     <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
     <extruder name="Primary Extruder">
+      <toolheadNumber>0</toolheadNumber>
+      <diameter>0.4</diameter>
+      <autoWidth>1</autoWidth>
+      <width>0.48</width>
+      <extrusionMultiplier>1</extrusionMultiplier>
+      <useRetract>1</useRetract>
+      <retractionDistance>4</retractionDistance>
+      <extraRestartDistance>0</extraRestartDistance>
       <retractionZLift>0</retractionZLift>
+      <retractionSpeed>2400</retractionSpeed>
+      <useCoasting>1</useCoasting>
+      <coastingDistance>0.5</coastingDistance>
+      <useWipe>0</useWipe>
+      <wipeDistance>5</wipeDistance>
     </extruder>
   </autoConfigureQuality>
   <autoConfigureQuality name=".28">
@@ -374,16 +391,29 @@
   </autoConfigureQuality>
   <autoConfigureQuality name=".24">
     <layerHeight>0.24</layerHeight>
-    <topSolidLayers>4</topSolidLayers>
-    <bottomSolidLayers>4</bottomSolidLayers>
-    <skirtLayers>2</skirtLayers>
+    <topSolidLayers>2</topSolidLayers>
+    <bottomSolidLayers>2</bottomSolidLayers>
+    <skirtLayers>1</skirtLayers>
     <infillPercentage>30</infillPercentage>
     <supportInfillPercentage>40</supportInfillPercentage>
     <firstLayerHeightPercentage>100</firstLayerHeightPercentage>
     <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
     <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
     <extruder name="Primary Extruder">
+      <toolheadNumber>0</toolheadNumber>
+      <diameter>0.4</diameter>
+      <autoWidth>0</autoWidth>
+      <width>0.38</width>
+      <extrusionMultiplier>1</extrusionMultiplier>
+      <useRetract>1</useRetract>
+      <retractionDistance>4</retractionDistance>
+      <extraRestartDistance>0</extraRestartDistance>
       <retractionZLift>0</retractionZLift>
+      <retractionSpeed>2400</retractionSpeed>
+      <useCoasting>1</useCoasting>
+      <coastingDistance>0.5</coastingDistance>
+      <useWipe>0</useWipe>
+      <wipeDistance>5</wipeDistance>
     </extruder>
   </autoConfigureQuality>
   <autoConfigureQuality name=".20">
@@ -397,7 +427,20 @@
     <firstLayerWidthPercentage>150</firstLayerWidthPercentage>
     <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
     <extruder name="Primary Extruder">
+      <toolheadNumber>0</toolheadNumber>
+      <diameter>0.4</diameter>
+      <autoWidth>1</autoWidth>
+      <width>0.48</width>
+      <extrusionMultiplier>1</extrusionMultiplier>
+      <useRetract>1</useRetract>
+      <retractionDistance>4</retractionDistance>
+      <extraRestartDistance>0</extraRestartDistance>
       <retractionZLift>0</retractionZLift>
+      <retractionSpeed>2400</retractionSpeed>
+      <useCoasting>1</useCoasting>
+      <coastingDistance>0.5</coastingDistance>
+      <useWipe>0</useWipe>
+      <wipeDistance>5</wipeDistance>
     </extruder>
   </autoConfigureQuality>
   <autoConfigureQuality name=".16">
@@ -410,9 +453,22 @@
     <firstLayerHeightPercentage>100</firstLayerHeightPercentage>
     <firstLayerWidthPercentage>150</firstLayerWidthPercentage>
     <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
-	<extruder name="Primary Extruder">
+    <extruder name="Primary Extruder">
+      <toolheadNumber>0</toolheadNumber>
+      <diameter>0.4</diameter>
+      <autoWidth>0</autoWidth>
+      <width>0.38</width>
+      <extrusionMultiplier>1</extrusionMultiplier>
+      <useRetract>1</useRetract>
+      <retractionDistance>4</retractionDistance>
+      <extraRestartDistance>0</extraRestartDistance>
       <retractionZLift>0</retractionZLift>
-    </extruder>	
+      <retractionSpeed>2400</retractionSpeed>
+      <useCoasting>1</useCoasting>
+      <coastingDistance>0.5</coastingDistance>
+      <useWipe>0</useWipe>
+      <wipeDistance>5</wipeDistance>
+    </extruder>
   </autoConfigureQuality>
   <autoConfigureQuality name=".12">
     <layerHeight>0.12</layerHeight>
@@ -430,7 +486,7 @@
   </autoConfigureQuality>
   <autoConfigureMaterial name="TPU">
     <globalExtruderTemperature>210</globalExtruderTemperature>
-    <globalBedTemperature>60</globalBedTemperature>
+    <globalBedTemperature>70</globalBedTemperature>
     <globalExtrusionMultiplier>1</globalExtrusionMultiplier>
     <fanSpeed>
       <setpoint layer="1" speed="0"/>
@@ -458,6 +514,7 @@
       <useRetract>1</useRetract>
       <retractionDistance>4</retractionDistance>
       <extraRestartDistance>0</extraRestartDistance>
+      <retractionZLift>0</retractionZLift>
       <retractionSpeed>2400</retractionSpeed>
       <useCoasting>1</useCoasting>
       <coastingDistance>0.5</coastingDistance>
@@ -496,6 +553,7 @@
       <useRetract>1</useRetract>
       <retractionDistance>2</retractionDistance>
       <extraRestartDistance>0.2</extraRestartDistance>
+      <retractionZLift>0</retractionZLift>
       <retractionSpeed>2400</retractionSpeed>
       <useCoasting>0</useCoasting>
       <coastingDistance>0.2</coastingDistance>
