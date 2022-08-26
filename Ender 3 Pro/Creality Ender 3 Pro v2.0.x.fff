@@ -376,7 +376,7 @@
       <useWipe>0</useWipe>
       <wipeDistance>5</wipeDistance>
     </extruder>
-	<startingGcode>M420 S0 ; Disable Mesh Bed Leveling,G28 ; home all axes,M420 S1 ; Enable Mesh Bed Leveling,M204 P1500.00 R2000.00 T3000.00 ; Set Acceleration,M207 S2.00 W20.00 F3000.00 Z0.64 ; Retraction Z lift 2x layer height,M208 S0.00 W20.00 F3000.00 ; Retraction Recover,M209 S1 ; Enable Firmware Retraction,M201 X3000 Y3000 Z100 E10000 ; Set Acceleration Limits,M900 K0.17 ; Linear Advance,G1 E15 F225 ; purge nozzle,G1 X5 Y30 Z0.1 E0.5 F1200 ; slow wipe</startingGcode>
+	<startingGcode>M420 S0 ; Disable Mesh Bed Leveling,G28 ; home all axes,M420 S1 ; Enable Mesh Bed Leveling,M204 P1500.00 R2000.00 T3000.00 ; Set Acceleration,M207 S2.00 W20.00 F3000.00 Z0.64 ; Retraction Z lift 2x layer height,M208 S0.00 W20.00 F3000.00 ; Retraction Recover,M209 S1 ; Enable Firmware Retraction,M201 X3000 Y3000 Z100 E10000 ; Set Acceleration Limits,M900 K0.08 ; Linear Advance,G1 E15 F225 ; purge nozzle,G1 X5 Y30 Z0.1 E0.5 F1200 ; slow wipe</startingGcode>
   </autoConfigureQuality>
   <autoConfigureQuality name=".28">
     <layerHeight>0.28</layerHeight>
@@ -404,7 +404,7 @@
       <useWipe>0</useWipe>
       <wipeDistance>5</wipeDistance>
     </extruder>
-    <startingGcode>M420 S0 ; Disable Mesh Bed Leveling,G28 ; home all axes,M420 S1 ; Enable Mesh Bed Leveling,M204 P1500.00 R2000.00 T3000.00 ; Set Acceleration,M207 S2.00 W20.00 F3000.00 Z0.56 ; Retraction Z lift 2x layer height,M208 S0.00 W20.00 F3000.00 ; Retraction Recover,M209 S1 ; Enable Firmware Retraction,M201 X3000 Y3000 Z100 E10000 ; Set Acceleration Limits,M900 K0.17 ; Linear Advance,G1 E15 F225 ; purge nozzle,G1 X5 Y30 Z0.1 E0.5 F1200 ; slow wipe</startingGcode>
+    <startingGcode>M420 S0 ; Disable Mesh Bed Leveling,G28 ; home all axes,M420 S1 ; Enable Mesh Bed Leveling,M204 P1500.00 R2000.00 T3000.00 ; Set Acceleration,M207 S2.00 W20.00 F3000.00 Z0.56 ; Retraction Z lift 2x layer height,M208 S0.00 W20.00 F3000.00 ; Retraction Recover,M209 S1 ; Enable Firmware Retraction,M201 X3000 Y3000 Z100 E10000 ; Set Acceleration Limits,M900 K0.08 ; Linear Advance,G1 E15 F225 ; purge nozzle,G1 X5 Y30 Z0.1 E0.5 F1200 ; slow wipe</startingGcode>
   </autoConfigureQuality>
   <autoConfigureQuality name=".24">
     <layerHeight>0.24</layerHeight>
@@ -432,7 +432,7 @@
       <useWipe>0</useWipe>
       <wipeDistance>5</wipeDistance>
     </extruder>
-	<startingGcode>M420 S0 ; Disable Mesh Bed Leveling,G28 ; home all axes,M420 S1 ; Enable Mesh Bed Leveling,M204 P1500.00 R2000.00 T3000.00 ; Set Acceleration,M207 S2.00 W20.00 F3000.00 Z0.48 ; Retraction Z lift 2x layer height,M208 S0.00 W20.00 F3000.00 ; Retraction Recover,M209 S1 ; Enable Firmware Retraction,M201 X3000 Y3000 Z100 E10000 ; Set Acceleration Limits,M900 K0.17 ; Linear Advance,G1 E15 F225 ; purge nozzle,G1 X5 Y30 Z0.1 E0.5 F1200 ; slow wipe</startingGcode>
+	<startingGcode>M420 S0 ; Disable Mesh Bed Leveling,G28 ; home all axes,M420 S1 ; Enable Mesh Bed Leveling,M204 P1500.00 R2000.00 T3000.00 ; Set Acceleration,M207 S2.00 W20.00 F3000.00 Z0.48 ; Retraction Z lift 2x layer height,M208 S0.00 W20.00 F3000.00 ; Retraction Recover,M209 S1 ; Enable Firmware Retraction,M201 X3000 Y3000 Z100 E10000 ; Set Acceleration Limits,M900 K0.08 ; Linear Advance,G1 E15 F225 ; purge nozzle,G1 X5 Y30 Z0.1 E0.5 F1200 ; slow wipe</startingGcode>
   </autoConfigureQuality>
   <autoConfigureQuality name=".20">
     <layerHeight>0.2</layerHeight>
@@ -460,7 +460,7 @@
       <useWipe>0</useWipe>
       <wipeDistance>5</wipeDistance>
     </extruder>
-	<startingGcode>M420 S0 ; Disable Mesh Bed Leveling,G28 ; home all axes,M420 S1 ; Enable Mesh Bed Leveling,M204 P1500.00 R2000.00 T3000.00 ; Set Acceleration,M207 S2.00 W20.00 F3000.00 Z0.40 ; Retraction Z lift 2x layer height,M208 S0.00 W20.00 F3000.00 ; Retraction Recover,M209 S1 ; Enable Firmware Retraction,M201 X3000 Y3000 Z100 E10000 ; Set Acceleration Limits,M900 K0.17 ; Linear Advance,G1 E15 F225 ; purge nozzle,G1 X5 Y30 Z0.1 E0.5 F1200 ; slow wipe</startingGcode>
+	<startingGcode>M420 S0 ; Disable Mesh Bed Leveling,G28 ; home all axes,M420 S1 ; Enable Mesh Bed Leveling,M204 P1500.00 R2000.00 T3000.00 ; Set Acceleration,M207 S2.00 W20.00 F3000.00 Z0.40 ; Retraction Z lift 2x layer height,M208 S0.00 W20.00 F3000.00 ; Retraction Recover,M209 S1 ; Enable Firmware Retraction,M201 X3000 Y3000 Z100 E10000 ; Set Acceleration Limits,M900 K0.08 ; Linear Advance,G1 E15 F225 ; purge nozzle,G1 X5 Y30 Z0.1 E0.5 F1200 ; slow wipe</startingGcode>
   </autoConfigureQuality>
   <autoConfigureQuality name=".16">
     <layerHeight>0.16</layerHeight>
@@ -488,7 +488,7 @@
       <useWipe>0</useWipe>
       <wipeDistance>5</wipeDistance>
     </extruder>
-	<startingGcode>M420 S0 ; Disable Mesh Bed Leveling,G28 ; home all axes,M420 S1 ; Enable Mesh Bed Leveling,M204 P1500.00 R2000.00 T3000.00 ; Set Acceleration,M207 S2.00 W20.00 F3000.00 Z0.32 ; Retraction Z lift 2x layer height,M208 S0.00 W20.00 F3000.00 ; Retraction Recover,M209 S1 ; Enable Firmware Retraction,M201 X3000 Y3000 Z100 E10000 ; Set Acceleration Limits,M900 K0.17 ; Linear Advance,G1 E15 F225 ; purge nozzle,G1 X5 Y30 Z0.1 E0.5 F1200 ; slow wipe</startingGcode>
+	<startingGcode>M420 S0 ; Disable Mesh Bed Leveling,G28 ; home all axes,M420 S1 ; Enable Mesh Bed Leveling,M204 P1500.00 R2000.00 T3000.00 ; Set Acceleration,M207 S2.00 W20.00 F3000.00 Z0.32 ; Retraction Z lift 2x layer height,M208 S0.00 W20.00 F3000.00 ; Retraction Recover,M209 S1 ; Enable Firmware Retraction,M201 X3000 Y3000 Z100 E10000 ; Set Acceleration Limits,M900 K0.08 ; Linear Advance,G1 E15 F225 ; purge nozzle,G1 X5 Y30 Z0.1 E0.5 F1200 ; slow wipe</startingGcode>
   </autoConfigureQuality>
   <autoConfigureQuality name=".12">
     <layerHeight>0.12</layerHeight>
@@ -516,7 +516,7 @@
       <useWipe>0</useWipe>
       <wipeDistance>5</wipeDistance>
     </extruder>
-	<startingGcode>M420 S0 ; Disable Mesh Bed Leveling,G28 ; home all axes,M420 S1 ; Enable Mesh Bed Leveling,M204 P1500.00 R2000.00 T3000.00 ; Set Acceleration,M207 S2.00 W20.00 F3000.00 Z0.24 ; Retraction Z lift 2x layer height,M208 S0.00 W20.00 F3000.00 ; Retraction Recover,M209 S1 ; Enable Firmware Retraction,M201 X3000 Y3000 Z100 E10000 ; Set Acceleration Limits,M900 K0.17 ; Linear Advance,G1 E15 F225 ; purge nozzle,G1 X5 Y30 Z0.1 E0.5 F1200 ; slow wipe</startingGcode>
+	<startingGcode>M420 S0 ; Disable Mesh Bed Leveling,G28 ; home all axes,M420 S1 ; Enable Mesh Bed Leveling,M204 P1500.00 R2000.00 T3000.00 ; Set Acceleration,M207 S2.00 W20.00 F3000.00 Z0.24 ; Retraction Z lift 2x layer height,M208 S0.00 W20.00 F3000.00 ; Retraction Recover,M209 S1 ; Enable Firmware Retraction,M201 X3000 Y3000 Z100 E10000 ; Set Acceleration Limits,M900 K0.08 ; Linear Advance,G1 E15 F225 ; purge nozzle,G1 X5 Y30 Z0.1 E0.5 F1200 ; slow wipe</startingGcode>
   </autoConfigureQuality>
   <autoConfigureMaterial name="TPU">
     <globalExtruderTemperature>210</globalExtruderTemperature>
